@@ -1,2 +1,18 @@
 打印到屏幕
-GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Yellow, TEXT("SetupPlayerInputComponent"));
+FString str;
+str = FString::SanitizeFloat(VectorAngleLevel);
+GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Yellow, str );
+
+
+
+
+射线距离
+LineTrace
+
+
+获得某个类在场景中的所有实例
+GetAllActorsOfClass 
+
+类型转换
+FString str;
+str = FString::SanitizeFloat(TankBarrel->GetComponentLocation().X);
